@@ -24,7 +24,6 @@ Route::prefix('v1')->group(function () {
         Route::get('{id}', [\App\Http\Controllers\APIController::class, 'getOrderDetails']);
         Route::post('/', [\App\Http\Controllers\APIController::class, 'postNewOrder']);
         Route::post('progress', [\App\Http\Controllers\APIController::class, 'updateProgressOrder']);
-        Route::post('progress', [\App\Http\Controllers\APIController::class, 'updateProgressOrder']);
 
         Route::post('payment', [\App\Http\Controllers\APIController::class, 'postPayments']);
         Route::post('payment/update', [\App\Http\Controllers\APIController::class, 'updatePayments']);
